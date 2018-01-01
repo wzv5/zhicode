@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nicoconi.zhicode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_main2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_main2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.system" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_main" />
+        </activity>
+
+        <receiver
+            android:name=".NotificationClickReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".NotificationDonateReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".NotificationDisableReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".ZhiTileService"
+            android:icon="@drawable/ic_main"
+            android:label="@string/tile_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

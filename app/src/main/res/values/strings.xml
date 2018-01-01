@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">支持维护者</string>
+    <string name="zhicode_hongbao">SVno3W04jV</string>
+    <string name="zhicode_donate">#吱口令#长按复制此条消息，打开支付宝给我转账eOPD4I04AT</string>
+    <string name="alipay_package">com.eg.android.AlipayGphone</string>
+    <string name="pref_disable_notify">disable_notify</string>
+    <string name="pref_last_notify">last_notify</string>
+    <string name="tile_title">领红包</string>
+    <string name="text_main1">求求大家领一下我的支付宝红包吧，反正马云爸爸发钱，就当免费捐赠了。\n\n当然，你也可以直接给我打钱捐赠~</string>
+    <string name="text_main2">你也可以添加“领红包”磁贴到快速设置栏。\n\n如果不想要看到红包通知，可以在下面关闭：</string>
+</resources>
