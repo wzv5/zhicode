@@ -27,6 +27,8 @@ public class MainActivity extends Activity implements
         btn_hongbao.setOnClickListener(this);
         btn_donate.setOnClickListener(this);
         switch1.setOnCheckedChangeListener(this);
+
+        Util.setAlarm(this);
     }
 
     @Override

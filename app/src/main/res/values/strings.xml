@@ -8,4 +8,5 @@
     <string name="tile_title">领红包</string>
     <string name="text_main1">求求大家领一下我的支付宝红包吧，反正马云爸爸发钱，就当免费捐赠了。\n\n当然，你也可以直接给我打钱捐赠~</string>
     <string name="text_main2">你也可以添加“领红包”磁贴到快速设置栏。\n\n如果不想要看到红包通知，可以在下面关闭：</string>
+    <string name="text_main3">维护者：二叉白403\n微博：https://weibo.com/wzv5\nGitHub：https://github.com/wzv5\n（本app开源在我的GitHub上）</string>
 </resources>

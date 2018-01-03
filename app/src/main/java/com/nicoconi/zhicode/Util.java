@@ -111,7 +111,7 @@ public class Util {
         calendar.set(Calendar.HOUR_OF_DAY, 6);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
-        Intent intent = new Intent(context, BootReceiver.class);
+        Intent intent = new Intent(context, AlarmReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         am.setRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pi);
     }
