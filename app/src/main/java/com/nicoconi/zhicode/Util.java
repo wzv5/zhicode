@@ -82,11 +82,15 @@ public class Util {
         Log.d("zhicode", "禁用通知");
         context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, BootReceiver.class),
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+        context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, AlarmReceiver.class),
+                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
     }
 
     public static void enableNotification(Context context) {
         Log.d("zhicode", "启用通知");
         context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, BootReceiver.class),
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, AlarmReceiver.class),
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         setAlarm(context);
     }
